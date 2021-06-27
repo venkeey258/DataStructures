@@ -18,6 +18,10 @@ public class Queue<V> {
 	
     }
     
+    public int Size() {
+	return this.currSize;
+    }
+    
     public boolean isEmpty() {
 	return currSize == 0;
     }
