@@ -23,9 +23,17 @@ public class Subsets {
 
   public static void main(String[] args) {
     List<List<Integer>> result = Subsets.findSubsets(new int[] { 1, 3 });
-    System.out.println("Here is the list of subsets: " + result);
+   // System.out.println("Here is the list of subsets: " + result);
 
-    result = Subsets.findSubsets(new int[] { 1, 5, 3 });
-    System.out.println("Here is the list of subsets: " + result);
+   // result = Subsets.findSubsets(new int[] { 1, 5, 3 });
+   Map<String,String> hmap = new HashMap<String,String>();
+   hmap.put("BespokeContent", "Â£Â£Â£");
+   
+   System.out.println(hmap.get("BespokeContent"));
+   String str = hmap.get("BespokeContent");
+  // System.out.println(str.replace("&#163;", "£"));
+   System.out.println(str.replaceAll("Â", ""));
+   
+   // System.out.println("Here is the list of subsets: " + result);
   }
 }
