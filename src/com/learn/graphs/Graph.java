@@ -22,7 +22,7 @@ public class Graph{
         if (source < vertices && destination < vertices){
             this.adjacencyList[source].addLast(destination);
          //for undirected graph uncomment the line below
-            //this.adjacencyList[destination].insertAtEnd(source);
+           // this.adjacencyList[destination].addLast(source);
         }
  }
 
